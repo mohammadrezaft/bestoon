@@ -55,7 +55,7 @@ ROOT_URLCONF = 'bestoon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/mohammaderzaft/ndp/Bestoon/bestoon/web/template/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +119,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+RECAPTCHA_SECRET_KEY = ''
+POSTMARK_API_TOKEN=''

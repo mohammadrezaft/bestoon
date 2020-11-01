@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     re_path(r'^submit/expense/$',views.submit_expence,name='submit_expence'),
-    # path(r'^submit/expence/([-]?[0-9]*)/$', views.submit_expence,name='submit_expence'),
+    re_path(r'^submit/income/$',views.submit_income,name='submit_income'),
+    re_path(r'^accounts/register/$',views.register,name='register'),
 ]
